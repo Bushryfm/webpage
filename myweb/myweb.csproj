@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="pages\NewFolder\**" />
+    <Compile Remove="wwwroot\NewFolder1\**" />
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="pages\NewFolder\**" />
+    <Content Remove="wwwroot\NewFolder1\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="pages\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="pages\NewFolder\**" />
+    <None Remove="wwwroot\NewFolder1\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="pages\course.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="pages\client\Index.cshtml" />
+    <Content Remove="pages\course.cshtml" />
+    <Content Remove="pages\crse.cshtml" />
+    <Content Remove="wwwroot\css\site.css" />
+    <Content Remove="wwwroot\css\StyleSheet.css" />
+    <Content Remove="wwwroot\feedback.html" />
+    <Content Remove="wwwroot\layout.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\HP\source\repos\myweb\myweb\pages\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="pages\contact.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="pages\client\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\contact.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\HP\source\repos\myweb\myweb\pages\.editorconfig" />
+    <None Include="pages\client\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.11" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="pages\client\Index.cshtml" />
+  </ItemGroup>
+
+</Project>

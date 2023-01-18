@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------<title> Website Layout | CodingLab</title>------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="~/css/stylehome.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <img src="~/image/ati.jpeg" width="50" height="auto" class="d-inline-block align-top" alt="">
+                <a href="">SLIATE</a>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contactus</a></li>
+                <li><a href="slife.html">Student life</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="img"></div> 
+    <div class="center">
+        <div class="title">EDUCATION IS THE BEST</div>
+        <div class="sub_title">WEAPON AGAINST IGNORANCE</div>
+        <div class="btns">
+            <button>LOGIN</button>
+            <button>REGISTER</button>
+        </div>
+    </div>
+
+
+            @RenderBody()
+
+  
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
